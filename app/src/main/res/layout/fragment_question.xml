@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3967DC">
+
+    <EditText
+        android:id="@+id/editTExtPlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="შეიყვანეთ პასუხი:"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textVieww"
+        app:layout_constraintTop_toBottomOf="@+id/textVieww" />
+
+    <EditText
+        android:id="@+id/editTextEat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="შეიყვანეთ პასუხი:"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editTextSleep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="შეიყვანეთ პასუხი:"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewww"
+        app:layout_constraintStart_toStartOf="@+id/textViewww"
+        app:layout_constraintTop_toBottomOf="@+id/textViewww" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/white"
+        android:text="შეყვანა"
+        android:textColor="#2E7C2F"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextSleep"
+        app:layout_constraintStart_toStartOf="@+id/editTextSleep"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSleep" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:text="იცით თუ არა რამდენჯერ ვიკვებები დღეში?"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textVieww"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="დღეში რამდენ დროს ვუთმობ მეცადინეობას?"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextEat"
+        app:layout_constraintStart_toStartOf="@+id/editTextEat"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEat" />
+
+    <TextView
+        android:id="@+id/textViewww"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="და ბოლოს, რამდენ საათს ვუთმობ მეგობრებთან გართობას დღეში?"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/editTExtPlay"
+        app:layout_constraintTop_toBottomOf="@+id/editTExtPlay" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
